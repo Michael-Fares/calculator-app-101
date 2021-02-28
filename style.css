@@ -1,5 +1,123 @@
+
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+div, header {
+  background-color: teal;
+}
+
+.numbers, .operations, .equals {
+  padding: 20px;
+}
+
+.numbers {
+  grid-area: number;
+}
+
+.operations {
+  grid-area: operations;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.equals {
+  grid-area: equals;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result {
+  grid-area: result;
+}
+
+#result {
+  background-color: yellowgreen;
+  color: darkslategray;
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+button {
+  background-color: yellowgreen;
+  margin: 3px;
+  border: none;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 20px;
+}
+
+#result:hover, button:hover {
+  background-color: yellow;
+}
+
+label {
+ display: inline-block;
+ margin: 10px auto;
+}
+
+input {
+  text-align: center;
+  padding: 5px;
+}
+
+@media screen and (min-width: 300px) {
+  body {
+    margin: 5% auto;
+    width: 50%;
+    height: 75%;
+    background-color: lightseagreen;
+    display: grid;
+    grid-template-rows: 10% auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "result"
+    "number"
+    "operations"
+    "equals";
+    color: yellowgreen;
+    font-family: 'DotGothic16', sans-serif;
+    
+   }
+
+   h1 {
+     font-size: 20px;
+   }
+   button, #result {
+     font-size: 15px;
+     margin: 2px 20px;
+   }
+  }
+
+@media screen and (min-width: 992px) {
 body {
-  margin: 20% auto;
+  margin: 5% auto;
   width: 50%;
   height: 75%;
+  background-color: lightseagreen;
+  display: grid;
+  grid-template-rows: 40% auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "result result result"
+  "number operations equals";
+  grid-gap: 10px;
+  color: yellowgreen;
+  font-family: 'DotGothic16', sans-serif;
+  
+ }
 }
