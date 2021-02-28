@@ -85,6 +85,7 @@ const equals = () => {
     default: "Choose an operation"
   }
 }
+
 const clear = () => {
-  document.getElementById("result").innerHTML = ''
+  document.getElementById("result").innerHTML = null
 }

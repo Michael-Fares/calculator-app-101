@@ -56,7 +56,6 @@ button {
   margin: 3px;
   border: none;
   font-family: 'DotGothic16', sans-serif;
-  font-size: 20px;
 }
 
 #result:hover, button:hover {
@@ -100,16 +99,17 @@ input {
      font-size: 15px;
      margin: 2px 20px;
    }
+   input, label {
+    margin-left: 20px;
+  }
   }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 667px) {
 body {
-  margin: 5% auto;
-  width: 50%;
-  height: 75%;
+  margin: 2% auto;
   background-color: lightseagreen;
   display: grid;
-  grid-template-rows: 40% auto auto;
+  grid-template-rows: 20% auto auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
   "header header header"
@@ -120,4 +120,35 @@ body {
   font-family: 'DotGothic16', sans-serif;
   
  }
+ h1 {
+  font-size: 20px;
 }
+button, #result {
+  font-size: 15px;
+  margin: 2px 20px;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    margin: 10% auto;
+    background-color: lightseagreen;
+    display: grid;
+    grid-template-rows: 40% auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "result result result"
+    "number operations equals";
+    grid-gap: 10px;
+    color: yellowgreen;
+    font-family: 'DotGothic16', sans-serif;
+  }
+    #result {
+      font-size: 20px;
+    }
+
+   }
+  
+  
